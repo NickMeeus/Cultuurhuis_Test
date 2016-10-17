@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* NORMALIZE */
+html, body, div, section, article, aside, nav, footer {
+    margin:0;
+    padding:0;
+}
+img {
+    border:none;
+    float:left;
+    margin: 0 1.25em 0.5em 0;
+}
+table{
+    border-collapse:collapse;
+    border-spacing: 0;
+    empty-cells:hide;
+}
+tr,td {
+    margin:0;
+    padding:0;
+}
+
+
+/* OPMAAK hele pagina */
+body {
+    font-family: Palatino, Calibri, Arial, sans-serif, Candara, "Times New Roman";
+}
+h1, h2, ul, tr, h5, p, form, a {
+    margin-left: 5px;
+}
+
+
+/* MENU */
+li, h1 {
+    display: block;
+    float: left;
+    margin-right: 0.5em;
+}
+h1, h2 {
+    color: darkblue;
+}
+ol, ul {
+    list-style: none;
+    padding: 0em;
+}
+
+
+/* SHOW TABLE */
+thead th { 
+    background: #FFAA00; 
+    color: darkblue;
+}
+tbody tr:nth-child(odd) { 
+    background: #FFF347; 
+}
+tbody tr:nth-child(even) { 
+    background: #B7C9FF; 
+}
+table td, table tr, table th { 
+    border: 3px solid white; 
+}
+#vrijePlaatsen { 
+    text-align: right; 
+}
+
+
+/* RESERVEREN OPMAAK */
+#reserveren p {
+    margin-top: 0em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+#reserveren h5 {
+    margin-bottom: 0em;
+    margin-top: 1em;
+    font-weight: normal;
+    font-size: 1em;
+}
+#reserveerknop {
+    margin-top: 1em;
+}
+#plaatsen {
+    width: 4em;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+
+/* MANDJE OPMAAK */
+input[type=checkbox] {
+    margin: 0 auto;
+    display: block;
+}
+
+#verwijderCheckbox {
+    text-align: center; /* center checkbox horizontaal */
+    vertical-align: middle; /* center checkbox verticaal */
+}
+
+
+/* BEVESTIG OPMAAK */
+.pmargin {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+#naam, #paswoord {
+    margin-top: 0em;
+}
+#bevestigpaswoord {
+    width: 9em;
+}
+#zoekknop {
+    margin-top: 1em;
+}
+#nieuwknop {
+    margin-top: 0.5em;
+}
+
+
+/* NIEUWE KLANT */
+.pnieuw {
+    margin-top: 1em;
+    margin-bottom: 0em;
+}
+#okknop {
+    margin-top: 1em;
+}
+.nieuwbreed {
+    width: 25em;
+}
+.nieuwsmal {
+    width: 24em;
+}
+#klantFouten li {
+    margin-left: 3em;
+    display: block;
+    float: left;
+    color: red;
+    width: 51%;
+    display: list-item; 
+}
+#klantFouten {
+    list-style-type: square;
+}
+
+/* CLEARFIX */
+.clearFix:before, .clearFix:after {
+    content: " ";
+    display: table;
+}
+.clearFix:after {
+    clear: both;
+}
+/* enkel voor IE6/7 */
+.clearFix {
+    *zoom: 1;
+}
